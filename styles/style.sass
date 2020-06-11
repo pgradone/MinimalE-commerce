@@ -46,7 +46,12 @@ hr
 em
   font-weight: bold
 
+ul
+  list-style: none
+
 header
+  width: 80%
+  margin: auto
   display: flex
   justify-content: space-between
   img
@@ -67,11 +72,18 @@ form
   // flex-direction: column
 
 .howell, .stats, .photoheader
+  width: 80%
+  margin: auto
   display: flex
-  margin: 0.5rem
+  justify-content: space-between
+  // margin: 0.5rem
   img
     width: 2rem
     height: 2rem
+
+.redbench
+  img
+    width: 100%
 
 .photoheader
   display: flex
@@ -93,9 +105,12 @@ form
   display: flex
 
 #photography
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-evenly
+  // display: flex
+  // flex-wrap: wrap
+  // justify-content: space-evenly
+  width: 100%
+  margin: 0
+  justify-content: space-between
   .card
     position: relative
     margin: 1rem

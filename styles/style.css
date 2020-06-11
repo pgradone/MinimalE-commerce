@@ -38,7 +38,13 @@ em {
   font-weight: bold;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,15 +78,23 @@ form {
 }
 
 .howell, .stats, .photoheader {
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .howell img, .stats img, .photoheader img {
   width: 2rem;
   height: 2rem;
+}
+
+.redbench img {
+  width: 100%;
 }
 
 .photoheader {
@@ -117,14 +131,11 @@ form {
 }
 
 #photography {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #photography .card {
