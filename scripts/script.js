@@ -1,12 +1,10 @@
 // create a variable for the <section> #photography
 const photoSection = document.querySelector('#photography');
-// console.log(articlesArray);
-const model = document.querySelector('.card');
-const cloneHTML = model.cloneNode(true);
+const modelCard = document.querySelector('.card');
 // loop over all the photos data that will
-photosArray.forEach((photo) => {
-  console.log(cloneHTML, photo.imgUrl);
+for (const photo of photosArray) {
   //- clone a mockup <article> and append to the <section>
+  const cloneHTML = modelCard.cloneNode(true);
   photoSection.append(cloneHTML);
   // set all the properties
   cloneHTML.querySelector('img').src = photo.imgUrl;
@@ -17,8 +15,8 @@ photosArray.forEach((photo) => {
   }
   // id should be unique, so set it while you're at it
   cloneHTML.id = photo.name;
-});
-cloneHTML.remove;
+}
+modelCard.remove;
 
 // set object with the comments
 const commentsInput = document.querySelector('#comments');
@@ -49,13 +47,13 @@ document.querySelector('form').addEventListener('submit', function (event) {
 
 const commentsList = document.querySelector('.commentslist');
 const liModel = document.querySelector('.commentslist li');
-const liHTML = liModel.cloneNode(true);
 // insert the comments from the Array
 comments.forEach((commnt) => {
   //- clone the mockup <li> and append to the <ul>
+  const liHTML = liModel.cloneNode(true);
   commentsList.append(liHTML);
   // set all the properties
   liHTML.querySelector('img').src = 'images/' + commnt.user + '.png';
   liHTML.querySelector('p').textContent = commnt.message;
 });
-liHTML.remove;
+liModel.remove;
