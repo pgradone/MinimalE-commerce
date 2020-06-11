@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Archivo', sans-serif;
+  color: #000000;
+}
+
+body button {
+  background-color: #000000;
+  border: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+hr {
+  color: #E4E4E4;
+  width: 70%;
+}
+
+em {
+  font-weight: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  width: 2rem;
+  height: auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.howell, .stats, .redbench, .photoheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+}
+
+.howell img, .stats img, .redbench img, .photoheader img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.photoheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photoheader div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.invalid {
+  background: url(../images/invalid.png) no-repeat 0 50%;
+  color: #E23F3F;
+  color-background-color: #E23F3F;
+}
+
+.valid {
+  background: url(../images/valid.png) no-repeat 0 50%;
+  color: #0c7973;
+  color-border-color: #0c7973;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#photography {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#photography .card {
+  position: relative;
+  margin: 2rem;
+}
+
+#photography .card span {
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  padding: 5px;
+  top: -0.5rem;
+  right: 10%;
+}
+
+#redbnch {
+  background-image: url("../images/pic-bench.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+  display: block;
+}
+
+#comments {
+  width: 100%;
+  height: 5rem;
+}
+
+input[type='submit'] {
+  color: white;
+  background-color: #000000;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

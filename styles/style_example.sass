@@ -1,0 +1,55 @@
+$black : #000000
+$white : #FFFFFF
+$blue_links : #647B96
+$red_dot : #E23F3F
+$grey_header : #F8F8F8
+$paragraph_grey : #656565
+$dark_grey : #656565
+$line : #E4E4E4
+$green_dark: #0c7973
+$green: #2a8878
+$beige: #feebda
+$pink: #e782a4
+$pink_dark: #991d42
+$break_medium: 800px
+$break_large: 1200px
+
+//reset
+*
+  box-sizing: border-box
+  transition-duration: 0.4s
+  margin: 0
+  padding: 0
+
+body
+  background-color: $white
+  font-family: 'Archivo', sans-serif
+  color: $beige
+  text-align: center
+
+header
+  background-color: $green_dark
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0.5rem
+  button
+    background-color: transparent
+    border: 0
+    img
+      height: 15px
+  form input
+    border: 0
+    border-radius: 0.5rem
+    width: 6rem
+    background-color: $green
+    padding: 0.25rem 0.5rem
+    &::placeholder
+      color: $beige
+
+  main
+    button
+      background-color: $black
+      border: 0
+      color: $white
+      text-transform: uppercase
