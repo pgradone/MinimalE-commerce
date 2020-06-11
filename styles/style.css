@@ -22,7 +22,8 @@ body button {
 }
 
 main {
-  width: 70%;
+  width: 80%;
+  margin: auto;
 }
 
 h1 {
@@ -31,7 +32,6 @@ h1 {
 
 hr {
   color: #E4E4E4;
-  width: 70%;
 }
 
 em {
@@ -117,7 +117,6 @@ form {
 }
 
 #photography {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +129,7 @@ form {
 
 #photography .card {
   position: relative;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 #photography .card span {
