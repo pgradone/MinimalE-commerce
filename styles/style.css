@@ -21,6 +21,10 @@ body button {
   padding: 5px;
 }
 
+main {
+  width: 70%;
+}
+
 h1 {
   font-size: 20px;
 }
@@ -67,14 +71,14 @@ form {
       flex-wrap: wrap;
 }
 
-.howell, .stats, .redbench, .photoheader {
+.howell, .stats, .photoheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0.5rem;
 }
 
-.howell img, .stats img, .redbench img, .photoheader img {
+.howell img, .stats img, .photoheader img {
   width: 2rem;
   height: 2rem;
 }
@@ -136,14 +140,6 @@ form {
   padding: 5px;
   top: -0.5rem;
   right: 10%;
-}
-
-#redbnch {
-  background-image: url("../images/pic-bench.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 10rem;
-  display: block;
 }
 
 #comments {

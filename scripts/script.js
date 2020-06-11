@@ -56,4 +56,4 @@ comments.forEach((commnt) => {
   liHTML.querySelector('img').src = 'images/' + commnt.user + '.png';
   liHTML.querySelector('p').textContent = commnt.message;
 });
-liModel.remove;
+// liModel.remove;
