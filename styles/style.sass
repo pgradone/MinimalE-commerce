@@ -69,9 +69,6 @@ form
   display: flex
   justify-content: flex-end
   flex-wrap: wrap
-  // width: 100%
-  // display: flex
-  // flex-direction: column
 
 .howell, .stats, .photoheader
   width: 80%
@@ -91,6 +88,8 @@ form
     justify-content: space-between
   img
     width: 100%
+  span
+    display: flex
 
 .photoheader
   div
@@ -106,6 +105,7 @@ form
   color: $green_dark
   border-color: $green_dark
 
+
 .about
   margin-top: 2rem
   margin-bottom: 2rem
@@ -116,12 +116,10 @@ form
   margin: 0
   display: flex
   flex-wrap: wrap
-  // justify-content: space-evenly
   justify-content: space-between
   .card
     position: relative
     margin: 0.5rem
-    // margin: 10rem
     span
       background-color: $black  
       color: white
@@ -129,16 +127,29 @@ form
       padding: 5px
       top: -0.5rem
       right: 10%
-      // 
 
 #comments
   width: 100%
   height: 5rem
-  // padding-left: 22px
-  // line-height: 24px
+
+#imgbought
+  width: 1rem
+  height: 1rem
 
 input[type='submit']
   color: white
   background-color: $black
   padding: 0.5rem
   margin-top: 0.5rem
+
+.commentslist
+  li
+    display: flex
+    margin-top: 1rem
+    margin-bottom: 1rem
+  img
+    width: 2rem
+    height: 2rem
+
+.hidden
+  display: none

@@ -113,6 +113,12 @@ form {
   width: 100%;
 }
 
+.redbench span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .photoheader div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,10 +177,32 @@ form {
   height: 5rem;
 }
 
+#imgbought {
+  width: 1rem;
+  height: 1rem;
+}
+
 input[type='submit'] {
   color: white;
   background-color: #000000;
   padding: 0.5rem;
   margin-top: 0.5rem;
+}
+
+.commentslist li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.commentslist img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

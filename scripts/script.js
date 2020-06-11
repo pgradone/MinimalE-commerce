@@ -11,12 +11,13 @@ for (const photo of photosArray) {
   cloneHTML.querySelector('h3').textContent = photo.name;
   cloneHTML.querySelector('h5').textContent = photo.price;
   if (!photo.bestSeller) {
-    cloneHTML.querySelector('span').remove;
+    cloneHTML.querySelector('span').classList.add('hidden');
   }
+
   // id should be unique, so set it while you're at it
   cloneHTML.id = photo.name;
 }
-modelCard.remove;
+modelCard.classList.add('hidden');
 
 // set object with the comments
 const commentsInput = document.querySelector('#comments');
@@ -56,4 +57,4 @@ comments.forEach((commnt) => {
   liHTML.querySelector('img').src = 'images/' + commnt.user + '.png';
   liHTML.querySelector('p').textContent = commnt.message;
 });
-// liModel.remove;
+liModel.classList.add('hidden');
