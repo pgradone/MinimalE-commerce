@@ -41,6 +41,8 @@ h1
   font-size: 20px
 
 hr
+  width: 80%
+  margin: auto
   color: $line
 
 em
@@ -82,12 +84,15 @@ form
     height: 2rem
 
 .redbench
+  margin-top: 1rem
+  margin-bottom: 1rem
+  div
+    display: flex
+    justify-content: space-between
   img
     width: 100%
 
 .photoheader
-  display: flex
-  justify-content: space-between
   div
     display: flex
 
@@ -102,18 +107,20 @@ form
   border-color: $green_dark
 
 .about
+  margin-top: 2rem
+  margin-bottom: 2rem
   display: flex
 
 #photography
-  // display: flex
-  // flex-wrap: wrap
-  // justify-content: space-evenly
   width: 100%
   margin: 0
+  display: flex
+  flex-wrap: wrap
+  // justify-content: space-evenly
   justify-content: space-between
   .card
     position: relative
-    margin: 1rem
+    margin: 0.5rem
     // margin: 10rem
     span
       background-color: $black  

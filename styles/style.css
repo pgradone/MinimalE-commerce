@@ -31,6 +31,8 @@ h1 {
 }
 
 hr {
+  width: 80%;
+  margin: auto;
   color: #E4E4E4;
 }
 
@@ -93,17 +95,22 @@ form {
   height: 2rem;
 }
 
-.redbench img {
-  width: 100%;
+.redbench {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.photoheader {
+.redbench div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.redbench img {
+  width: 100%;
 }
 
 .photoheader div {
@@ -125,6 +132,8 @@ form {
 }
 
 .about {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,6 +142,11 @@ form {
 #photography {
   width: 100%;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -140,7 +154,7 @@ form {
 
 #photography .card {
   position: relative;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 #photography .card span {
