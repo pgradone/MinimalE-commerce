@@ -126,15 +126,11 @@ form {
 }
 
 .invalid {
-  background: url(../images/invalid.png) no-repeat 0 50%;
   color: #E23F3F;
-  background-color: #E23F3F;
 }
 
 .valid {
-  background: url(../images/valid.png) no-repeat 0 50%;
   color: #0c7973;
-  border-color: #0c7973;
 }
 
 .about {

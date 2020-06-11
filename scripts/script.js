@@ -27,23 +27,24 @@ commentsInput.addEventListener('keyup', function () {
   const commentsValid = this.value.length >= 4;
   commentsInput.classList.add(commentsValid ? 'valid' : 'invalid');
   commentsInput.classList.remove(commentsValid ? 'invalid' : 'valid');
-  // this.classlist.add(commentsValid ? "valid" : "invalid");
-  // this.classlist.remove(commentsValid ? "invalid" : "valid");
-  // or comment must not contain bad langage..
 });
 
 document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault;
+  // or comment must not contain bad langage..
   let isBadLanguage = false;
-  badlanguageArray.forEach((word) => {});
-  isBadLanguage = commentsInput.value.indexof('shit') > 0;
-  if (isBadLanguage) {
-    alert(
-      commentsInput +
-        ' contains bad language. Now do not be gross and re-input all your shit!'
-    );
-    commentsInput.value = '';
-  }
+  badlanguageArray.forEach((word) => {
+    console.log(word);
+    isBadLanguage = commentsInput.value.indexOf(word) >= 0;
+    if (isBadLanguage) {
+      alert(
+        '*** ' +
+          commentsInput.value +
+          ' *** contains bad language. Now do not be gross and re-input all your shit!'
+      );
+    }
+    commentsInput.focus();
+  });
 });
 
 const commentsList = document.querySelector('.commentslist');
